@@ -4,7 +4,7 @@ import { Fragment, useState } from "react";
 import Image from "next/image";
 import { Listbox, Transition } from "@headlessui/react";
 
-import { CustomFilterProps } from "@types";
+import { CustomFilterProps } from "@/types";
 
 export default function CustomFilter<T>({
   options,
