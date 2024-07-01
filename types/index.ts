@@ -60,9 +60,16 @@ export interface CustomFilterProps {
 export interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
+  setLimit: (limit: number) => void;
 }
 
 export interface SearchManuFacturerProps {
-  manufacturer: string;
+  selected: string;
+  setSelected: (selected: string) => void;
+}
+export type CarState = CarProps[] & { message?: string };
+
+export interface SearchBarProps {
   setManuFacturer: (manufacturer: string) => void;
+  setModel: (model: string) => void;
 }
